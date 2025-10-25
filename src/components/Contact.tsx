@@ -44,7 +44,7 @@ const Contact = () => {
 
     try {
       // Get backend URL from environment or use localhost for development
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://contact-form-backend-fnbc.onrender.com';
       
       const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
